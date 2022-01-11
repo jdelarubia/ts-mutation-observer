@@ -1,0 +1,4 @@
+node_modules/
+
+# intermediary js files
+src/js/
