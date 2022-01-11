@@ -1,30 +1,43 @@
 :root {
   --width: 5em;
   --height: 5em;
-  --bg-color: rgb(71, 90, 81);
-  --fg-color: rgb(62, 165, 117);
+  --body-bg-color: rgb(71, 90, 81);
+  --parent-bg-color: rgb(62, 165, 117);
+  --h1-fg-color: rgb(62, 165, 117);
+  --child-fg-color: rgb(62, 165, 117);
 }
 body {
-  background-color: var(--bg-color);
+  background-color: var(--body-bg-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  color: var(--fg-color);
+  color: var(--h1-fg-color);
 }
 .parent {
-  background-color: var(--fg-color);
-  padding: 0.5em;
+  align-self: center;
+  background-color: var(--parent-bg-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-self: center;
+  padding: 0.5em;
 }
 .child {
-  background-color: rgb(164, 231, 201);
-  color: var(--fg-color);
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  background-color: rgb(164, 231, 201);
+  color: var(--child-fg-color);
+  display: inline-flex;
   height: var(--height);
+  justify-content: center;
   width: var(--width);
+}
+button {
+  background-color: orange;
+  border: none;
+  border-left: 3px solid brown;
+  border-bottom: 3px solid brown;
+  color: brown;
+  font-weight: bold;
+  margin: 0.5em 0;
+  text-transform: capitalize;
+  padding: 0.5em;
 }
