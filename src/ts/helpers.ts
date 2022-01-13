@@ -10,13 +10,4 @@ const eventInitParams: EventInit = {
 };
 const ToggleEvent = new Event("ToggleVisibility", eventInitParams);
 
-/**
- * Retrun true if the style.display property is set to block or empty (element is visible),
- * @param elem HTMLElement
- * @returns boolean
- */
-function isElementVisible(elem: HTMLElement): boolean {
-  return ["visible", ""].includes(elem.style.visibility);
-} //.
-
-export { ToggleEvent, isElementVisible };
+export { ToggleEvent };
