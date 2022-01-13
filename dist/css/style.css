@@ -30,6 +30,9 @@ h1 {
   justify-content: center;
   width: var(--width);
 }
+.hidden {
+  visibility: hidden;
+}
 button {
   background-color: orange;
   border: none;
